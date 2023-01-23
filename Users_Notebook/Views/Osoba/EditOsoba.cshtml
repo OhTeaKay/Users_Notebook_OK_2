@@ -1,0 +1,32 @@
+﻿<h2>Edit Osoba</h2>
+<form asp-action="EditOsoba" method="post">
+     @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Item1.Id" name="Id" />
+    <div>
+        <label>Imie:</label>
+        <input type="text" asp-for="Item1.Imie" name="Imie" />
+    </div>
+    <div>
+        <label>Nazwisko:</label>
+        <input type="text" asp-for="Item1.Nazwisko" name="Nazwisko" />
+    </div>
+    <div>
+        <label>Data_urodzenia:</label>
+        <input type="text" asp-for="Item1.Data_urodzenia" name="Data_urodzenia" />
+    </div>
+    <div>
+        <label>Plec:</label>
+        <input type="text" asp-for="Item1.Plec" name="Plec" />
+    </div>
+    <div>
+        <label>Atrybut:</label>
+        <input type="text" asp-for="Item2.Atrybut" name="Atrybut" />
+    </div>
+    <div>
+        <label>Wartosc:</label>
+        <input type="text" asp-for="Item2.Wartosc" name="Wartosc" />
+    </div>
+    <div>
+        <input type="submit" value="Save Changes" class="btn btn-primary" />
+        <a asp-action="Index" </a>
+</div>

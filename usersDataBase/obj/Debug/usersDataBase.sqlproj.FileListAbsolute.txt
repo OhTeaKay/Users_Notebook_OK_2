@@ -1,0 +1,6 @@
+C:\Users\oskar\source\repos\Users_Notebook\usersDataBase\bin\Debug\usersDataBase.dacpac
+C:\Users\oskar\source\repos\Users_Notebook\usersDataBase\bin\Debug\usersDataBase.dll
+C:\Users\oskar\source\repos\Users_Notebook\usersDataBase\bin\Debug\usersDataBase.pdb
+C:\Users\oskar\source\repos\Users_Notebook\usersDataBase\obj\Debug\usersDataBase.sqlproj.AssemblyReference.cache
+C:\Users\oskar\source\repos\Users_Notebook\usersDataBase\obj\Debug\usersDataBase.dll
+C:\Users\oskar\source\repos\Users_Notebook\usersDataBase\obj\Debug\usersDataBase.pdb

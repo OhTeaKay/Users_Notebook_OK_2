@@ -1,0 +1,17 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Atrybuty_osób] (Table)
+       [dbo].[Osoby] (Table)
+       Foreign Key: unnamed constraint on [dbo].[Atrybuty_osób] (Foreign Key)
+
+** Supporting actions

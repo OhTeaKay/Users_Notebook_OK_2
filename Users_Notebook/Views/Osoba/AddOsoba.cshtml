@@ -1,0 +1,34 @@
+﻿<h2>Dodaj Osobę</h2>
+
+<form asp-action="AddOsoba" method="post">
+        @Html.AntiForgeryToken()
+
+    <div>
+        <label>Imie:</label>
+        <input type="text" asp-for="Imie" name="Imie" />
+    </div>
+    <div>
+        <label>Nazwisko:</label>
+        <input type="text" asp-for="Nazwisko" name="Nazwisko" />
+    </div>
+    <div>
+        <label>Data_urodzenia:</label>
+        <input type="text" asp-for="Data_urodzenia" name="Data_urodzenia" />
+    </div>
+    <div>
+        <label>Plec:</label>
+        <input type="text" asp-for="Plec" name="Plec" />
+    </div>
+    <div>
+        <label>Atrybut:</label>
+    <input type="text" asp-for="Atrybut" name="Atrybut" />
+    </div>
+    <div>
+        <label>Wartosc:</label>
+    <input type="text" asp-for="Wartosc" name="Wartosc" />
+    </div>
+    <div>
+    <input type="submit" value="Add" />
+    </div>
+
+</form>

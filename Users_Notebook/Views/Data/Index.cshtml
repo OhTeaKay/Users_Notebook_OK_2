@@ -1,0 +1,43 @@
+﻿<table>
+    <tr>
+        <th>Imie</th>
+        <th>Nazwisko</th>
+        <th>Data_urodzenia</th>
+        <th>Plec</th>
+        <th>Atrybut</th>
+        <th>Wartosc</th>
+    </tr>
+    @foreach (var item in ViewBag.data)
+    {
+        <tr>
+            <td>@item.Imie</td>
+            <td><a href="@Url.Action("EditOsoba", "Osoba", new { id = item.Id })" class="btn btn-primary">@item.Nazwisko</a></td>
+            <td>@item.Data_urodzenia</td>
+            <td>@item.Plec</td>
+            <td>@item.Atrybut</td>
+            <td>@item.Wartosc</td>
+        </tr>
+    }
+</table>
+<form action="@Url.Action("AddOsoba", "Osoba")" method="get">
+    <button type="submit" class="btn btn-primary">Add Osoba</button>
+</form>
+<button id="export-button">Export Users Report</button>
+
+<script>
+    document.getElementById("export-button").addEventListener("click", function() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "@Url.Action("ExportUsersReport", "Data")", true);
+        xhr.responseType = "blob";
+        xhr.onload = function () {
+            if (this.status === 200) {
+                var blob = new Blob([xhr.response], { type: "text/csv" });
+                var link = document.createElement("a");
+                link.href = window.URL.createObjectURL(blob);
+                link.download = "UsersReport.csv";
+                link.click();
+            }
+        };
+        xhr.send();
+    });
+</script>
